@@ -6,22 +6,35 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "f2elint-scan": "f2elint scan",
+    "f2elint-fix": "f2elint fix"
   },
   "dependencies": {
+    "@heroicons/react": "^2.0.18",
+    "@vercel/examples-ui": "^2.0.3",
+    "classnames": "^2.3.2",
+    "next": "14.0.3",
+    "next-intl": "^3.1.4",
     "react": "^18",
+    "react-cookie": "^6.1.1",
     "react-dom": "^18",
-    "next": "14.0.3"
+    "react-slick": "^0.29.0"
   },
   "devDependencies": {
-    "typescript": "^5",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "autoprefixer": "^10.0.1",
+    "f2elint": "^2.2.1",
     "postcss": "^8",
     "tailwindcss": "^3.3.0",
-    "eslint": "^8",
-    "eslint-config-next": "14.0.3"
+    "typescript": "^5"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "f2elint commit-file-scan",
+      "commit-msg": "f2elint commit-msg-scan"
+    }
   }
 }

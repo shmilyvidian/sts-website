@@ -1,0 +1,25 @@
+{
+  "useLocaleNames": {
+    "en-US": "English",
+    "zh-CN": "中文"
+  },
+  "Metadata": {
+    "title": "STS website",
+    "description": "Built with Next.js and next-intl"
+  },
+  "NavBar": {
+    "nav": {
+      "home": "Home",
+      "studio": "Studio",
+      "about": "About",
+      "blog": "Blog",
+      "contact": "Contact"
+    },
+    "login": "Log In",
+    "signUp": "Sign up"
+  },
+  "Home": {},
+  "About": {},
+  "Blog": {},
+  "Footer": {}
+}

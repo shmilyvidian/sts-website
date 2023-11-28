@@ -1,0 +1,25 @@
+{
+  "useLocaleNames": {
+    "en-US": "English",
+    "zh-CN": "中文"
+  },
+  "Metadata": {
+    "title": "STS官网",
+    "description": "STS accelerates your digital nomad journey"
+  },
+  "NavBar": {
+    "nav": {
+      "home": "首页",
+      "studio": "工作室",
+      "about": "关于我们",
+      "blog": "博客",
+      "contact": "联系我们"
+    },
+    "login": "登录",
+    "signUp": "注册"
+  },
+  "Home": {},
+  "About": {},
+  "Blog": {},
+  "Footer": {}
+}
