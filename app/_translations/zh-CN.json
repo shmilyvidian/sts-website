@@ -7,7 +7,7 @@
     "title": "STS官网",
     "description": "STS accelerates your digital nomad journey"
   },
-  "NavBar": {
+  "Header": {
     "nav": {
       "home": "首页",
       "studio": "工作室",

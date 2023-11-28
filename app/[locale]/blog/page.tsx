@@ -1,9 +1,8 @@
-import SingleBlog from '@/app/_components/Blog/SingleBlog';
-import blogData from '@/app/_components/Blog//blogData';
-import Breadcrumb from '@/app/_components/Common/Breadcrumb';
+import SingleBlog from '@/app/_components//Blog/SingleBlog';
+import blogData from '@/app/_components//Blog/blogData';
+import Breadcrumb from '@/app/_components//Common/Breadcrumb';
 
 import { Metadata } from 'next';
-import Container from '@/app/_components/Container';
 
 export const metadata: Metadata = {
   title: 'Blog Page | Free Next.js Template for Startup and SaaS',
@@ -13,23 +12,11 @@ export const metadata: Metadata = {
 
 const Blog = () => {
   return (
-    <Container>
-      <div className="container">
-        <div className="-mx-4 flex flex-wrap">
-          <div className="w-full px-4">
-            <div className="mx-auto mb-[60px] max-w-[510px] text-center">
-              <span className="mb-2 block text-lg font-semibold text-primary">Our Blogs</span>
-              <h2 className="mb-4 text-3xl font-bold text-dark dark:text-white sm:text-4xl md:text-[40px]">
-                Our Recent News
-              </h2>
-              <p className="text-base text-body-color dark:text-dark-6">
-                There are many variations of passages of Lorem Ipsum available but the majority have
-                suffered alteration in some form.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
+    <>
+      <Breadcrumb
+        pageName="Blog Grid"
+        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius eros eget sapien consectetur ultrices. Ut quis dapibus libero."
+      />
 
       <section className="pb-[120px] pt-[120px]">
         <div className="container">
@@ -102,7 +89,7 @@ const Blog = () => {
           </div>
         </div>
       </section>
-    </Container>
+    </>
   );
 };
 

@@ -7,7 +7,7 @@
     "title": "STS website",
     "description": "Built with Next.js and next-intl"
   },
-  "NavBar": {
+  "Header": {
     "nav": {
       "home": "Home",
       "studio": "Studio",
