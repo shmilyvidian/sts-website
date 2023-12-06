@@ -1,33 +1,31 @@
-import { Testimonial } from "@/types/testimonial";
-import SectionTitle from "../Common/SectionTitle";
-import SingleTestimonial from "./SingleTestimonial";
+import { Testimonial } from '@/types/testimonial';
+import SectionTitle from '../Common/SectionTitle';
+import SingleTestimonial from './SingleTestimonial';
 
 const testimonialData: Testimonial[] = [
   {
     id: 1,
-    name: "Musharof Chy",
-    designation: "Founder @TailGrids",
+    name: 'Musharof Chy',
+    designation: 'Founder @TailGrids',
     content:
-      "Our members are so impressed. It's intuitive. It's clean. It's distraction free. If you're building a community.",
-    image: "/images/testimonials/auth-01.png",
+      '非常感谢这个项目，让我掌握了宝贵的技能和知识。它不仅拓展了我的视野，还为我未来的职业道路铺平了道路。',
+    image: '/images/testimonials/auth-01.png',
     star: 5,
   },
   {
     id: 2,
-    name: "Devid Weilium",
-    designation: "Founder @UIdeck",
-    content:
-      "Our members are so impressed. It's intuitive. It's clean. It's distraction free. If you're building a community.",
-    image: "/images/testimonials/auth-02.png",
+    name: 'Devid Weilium',
+    designation: 'Founder @UIdeck',
+    content: '这个项目给予了我深刻的学习体验和实践机会。感谢它带来的技能提升和职业发展的可能性',
+    image: '/images/testimonials/auth-02.png',
     star: 5,
   },
   {
     id: 3,
-    name: "Lethium Frenci",
-    designation: "Founder @Lineicons",
-    content:
-      "Our members are so impressed. It's intuitive. It's clean. It's distraction free. If you're building a community.",
-    image: "/images/testimonials/auth-03.png",
+    name: 'Lethium Frenci',
+    designation: 'Founder @Lineicons',
+    content: '项目开发组非常专业和负责，为我们公司提供了优质服务！',
+    image: '/images/testimonials/auth-03.png',
     star: 5,
   },
 ];

@@ -1,11 +1,9 @@
 "use client";
-import { useState } from "react";
 import SectionTitle from "../Common/SectionTitle";
 import OfferList from "./OfferList";
 import PricingBox from "./PricingBox";
 
 const Pricing = () => {
-  const [isMonthly, setIsMonthly] = useState(true);
 
   return (
     <section id="pricing" className="relative z-10 py-16 md:py-20 lg:py-28">
@@ -17,88 +15,41 @@ const Pricing = () => {
           width="665px"
         />
 
-        <div className="w-full">
-          <div
-            className="wow fadeInUp mb-8 flex justify-center md:mb-12 lg:mb-16"
-            data-wow-delay=".1s"
-          >
-            <span
-              onClick={() => setIsMonthly(true)}
-              className={`${
-                isMonthly
-                  ? "pointer-events-none text-primary"
-                  : "text-dark dark:text-white"
-              } mr-4 cursor-pointer text-base font-semibold`}
-            >
-              Monthly
-            </span>
-            <div
-              onClick={() => setIsMonthly(!isMonthly)}
-              className="flex cursor-pointer items-center"
-            >
-              <div className="relative">
-                <div className="h-5 w-14 rounded-full bg-[#1D2144] shadow-inner" />
-                <div
-                  className={`${
-                    isMonthly ? "" : "translate-x-full"
-                  } shadow-switch-1 absolute left-0 top-[-4px] flex h-7 w-7 items-center justify-center rounded-full bg-primary transition`}
-                >
-                  <span className="active h-4 w-4 rounded-full bg-white" />
-                </div>
-              </div>
-            </div>
-            <span
-              onClick={() => setIsMonthly(false)}
-              className={`${
-                isMonthly
-                  ? "text-dark dark:text-white"
-                  : "pointer-events-none text-primary"
-              } ml-4 cursor-pointer text-base font-semibold`}
-            >
-              Yearly
-            </span>
-          </div>
-        </div>
-
-        <div className="grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2 lg:grid-cols-3">
-          <PricingBox
-            packageName="Lite"
-            price={isMonthly ? "40" : "120"}
-            duration={isMonthly ? "mo" : "yr"}
-            subtitle="Lorem ipsum dolor sit amet adiscing elit Mauris egestas enim."
-          >
-            <OfferList text="All UI Components" status="active" />
-            <OfferList text="Use with Unlimited Projects" status="active" />
-            <OfferList text="Commercial Use" status="active" />
-            <OfferList text="Email Support" status="active" />
-            <OfferList text="Lifetime Access" status="inactive" />
-            <OfferList text="Free Lifetime Updates" status="inactive" />
-          </PricingBox>
+        <div className="grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2 lg:grid-cols-2">
+        
           <PricingBox
             packageName="Basic"
-            price={isMonthly ? "399" : "789"}
-            duration={isMonthly ? "mo" : "yr"}
-            subtitle="Lorem ipsum dolor sit amet adiscing elit Mauris egestas enim."
+            price={"1299"}
+            duration={"终生服务"}
+            subtitle="react+ts全栈课程，持续更新课程，辅导求职职业规范等服务"
           >
-            <OfferList text="All UI Components" status="active" />
-            <OfferList text="Use with Unlimited Projects" status="active" />
-            <OfferList text="Commercial Use" status="active" />
-            <OfferList text="Email Support" status="active" />
-            <OfferList text="Lifetime Access" status="active" />
-            <OfferList text="Free Lifetime Updates" status="inactive" />
+            <OfferList text="React技术栈前端课程" status="active" />
+            <OfferList text="Nextjs服务端渲染" status="active" />
+            <OfferList text="Nextjs全栈后端项目" status="active" />
+            <OfferList text="CSS全套技术解决方案" status="active" />
+            <OfferList text="项目打包构建优化技能" status="active" />
+            <OfferList text="导师辅导" status="active" />
+            <OfferList text="远程工作技能培训" status="inactive" />
+            <OfferList text="外企英语技能培训" status="inactive" />
+            <OfferList text="远程工作机会推荐" status="inactive" />
+            <OfferList text="加入STS工作室获取项目开发机会" status="inactive" />
           </PricingBox>
           <PricingBox
             packageName="Plus"
-            price={isMonthly ? "589" : "999"}
-            duration={isMonthly ? "mo" : "yr"}
-            subtitle="Lorem ipsum dolor sit amet adiscing elit Mauris egestas enim."
+            price={"1899"}
+            duration={"终生服务"}
+            subtitle="基础计划的上的获得远程工作机会和技巧，加入工作室获取项目开发工作机会。"
           >
-            <OfferList text="All UI Components" status="active" />
-            <OfferList text="Use with Unlimited Projects" status="active" />
-            <OfferList text="Commercial Use" status="active" />
-            <OfferList text="Email Support" status="active" />
-            <OfferList text="Lifetime Access" status="active" />
-            <OfferList text="Free Lifetime Updates" status="active" />
+            <OfferList text="React技术栈前端课程" status="active" />
+            <OfferList text="Nextjs服务端渲染" status="active" />
+            <OfferList text="Nextjs全栈后端项目" status="active" />
+            <OfferList text="CSS全套技术解决方案" status="active" />
+            <OfferList text="项目打包构建优化技能" status="active" />
+            <OfferList text="导师辅导" status="active" />
+            <OfferList text="远程工作技能培训" status="active" />
+            <OfferList text="外企英语技能培训" status="active" />
+            <OfferList text="远程工作机会推荐" status="active" />
+            <OfferList text="加入STS工作室获取项目开发机会" status="active" />
           </PricingBox>
         </div>
       </div>
