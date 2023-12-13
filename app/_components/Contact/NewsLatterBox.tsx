@@ -1,7 +1,7 @@
-"use client";
+'use client';
 
-import { useTheme } from "next-themes";
-import Image from "next/image";
+import { useTheme } from 'next-themes';
+import Image from 'next/image';
 
 const NewsLatterBox = () => {
   const { theme } = useTheme();
@@ -14,47 +14,33 @@ const NewsLatterBox = () => {
       <h3 className="mb-4 text-2xl font-bold leading-tight text-black dark:text-white">
         直接联系我们
       </h3>
-     
+
       <div className="grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2 md:gap-x-6 lg:gap-x-8 xl:grid-cols-3">
-           <div
-        className="wow fadeInUp hover:shadow-two dark:hover:shadow-gray-dark group relative overflow-hidden rounded-sm bg-white shadow-one duration-300 dark:bg-dark"
-        data-wow-delay=".1s"
-      >
         <div
-          className="relative block aspect-[37/22] w-full"
+          className="wow fadeInUp hover:shadow-two dark:hover:shadow-gray-dark group relative overflow-hidden rounded-sm bg-white shadow-one duration-300 dark:bg-dark"
+          data-wow-delay=".1s"
         >
-      
-          <Image src={'/images/qrcode.png'} alt="image" fill />
-          <div>
-            微信二维码十点多的点点滴滴滴答滴答
+          <div className="relative block aspect-[37/22] w-full">
+            <Image src={'/images/qrcode.png'} alt="image" fill />
+            <div>微信二维码十点多的点点滴滴滴答滴答</div>
           </div>
         </div>
-        
-      </div>
-      <div
-        className="wow fadeInUp hover:shadow-two dark:hover:shadow-gray-dark group relative overflow-hidden rounded-sm bg-white shadow-one duration-300 dark:bg-dark"
-        data-wow-delay=".1s"
-      >
         <div
-          className="relative block aspect-[37/22] w-full"
+          className="wow fadeInUp hover:shadow-two dark:hover:shadow-gray-dark group relative overflow-hidden rounded-sm bg-white shadow-one duration-300 dark:bg-dark"
+          data-wow-delay=".1s"
         >
-        
-          <Image src={'/images/qrcode.png'} alt="image" fill />
+          <div className="relative block aspect-[37/22] w-full">
+            <Image src={'/images/qrcode.png'} alt="image" fill />
+          </div>
         </div>
-        
-      </div>
-      <div
-        className="wow fadeInUp hover:shadow-two dark:hover:shadow-gray-dark group relative overflow-hidden rounded-sm bg-white shadow-one duration-300 dark:bg-dark"
-        data-wow-delay=".1s"
-      >
         <div
-          className="relative block aspect-[37/22] w-full"
+          className="wow fadeInUp hover:shadow-two dark:hover:shadow-gray-dark group relative overflow-hidden rounded-sm bg-white shadow-one duration-300 dark:bg-dark"
+          data-wow-delay=".1s"
         >
-         
-          <Image src={'/images/qrcode.png'} alt="image" fill />
+          <div className="relative block aspect-[37/22] w-full">
+            <Image src={'/images/qrcode.png'} alt="image" fill />
+          </div>
         </div>
-        
-      </div>
       </div>
 
       <div>
@@ -80,13 +66,10 @@ const NewsLatterBox = () => {
                 y2="15.3509"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop
-                  stopColor={theme === "light" ? "#4A6CF7" : "#fff"}
-                  stopOpacity="0.62"
-                />
+                <stop stopColor={theme === 'light' ? '#4A6CF7' : '#fff'} stopOpacity="0.62" />
                 <stop
                   offset="1"
-                  stopColor={theme === "light" ? "#4A6CF7" : "#fff"}
+                  stopColor={theme === 'light' ? '#4A6CF7' : '#fff'}
                   stopOpacity="0"
                 />
               </linearGradient>
@@ -116,13 +99,10 @@ const NewsLatterBox = () => {
                 y2="10.2511"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop
-                  stopColor={theme === "light" ? "#4A6CF7" : "#fff"}
-                  stopOpacity="0.62"
-                />
+                <stop stopColor={theme === 'light' ? '#4A6CF7' : '#fff'} stopOpacity="0.62" />
                 <stop
                   offset="1"
-                  stopColor={theme === "light" ? "#4A6CF7" : "#fff"}
+                  stopColor={theme === 'light' ? '#4A6CF7' : '#fff'}
                   stopOpacity="0"
                 />
               </linearGradient>
@@ -152,13 +132,10 @@ const NewsLatterBox = () => {
                 y2="26.7564"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop
-                  stopColor={theme === "light" ? "#4A6CF7" : "#fff"}
-                  stopOpacity="0.62"
-                />
+                <stop stopColor={theme === 'light' ? '#4A6CF7' : '#fff'} stopOpacity="0.62" />
                 <stop
                   offset="1"
-                  stopColor={theme === "light" ? "#4A6CF7" : "#fff"}
+                  stopColor={theme === 'light' ? '#4A6CF7' : '#fff'}
                   stopOpacity="0"
                 />
               </linearGradient>
@@ -205,13 +182,10 @@ const NewsLatterBox = () => {
                 y2="237.617"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop
-                  offset="0.328125"
-                  stopColor={theme === "light" ? "#4A6CF7" : "#fff"}
-                />
+                <stop offset="0.328125" stopColor={theme === 'light' ? '#4A6CF7' : '#fff'} />
                 <stop
                   offset="1"
-                  stopColor={theme === "light" ? "#4A6CF7" : "#fff"}
+                  stopColor={theme === 'light' ? '#4A6CF7' : '#fff'}
                   stopOpacity="0"
                 />
               </linearGradient>
@@ -223,13 +197,10 @@ const NewsLatterBox = () => {
                 y2="212.617"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop
-                  offset="0.328125"
-                  stopColor={theme === "light" ? "#4A6CF7" : "#fff"}
-                />
+                <stop offset="0.328125" stopColor={theme === 'light' ? '#4A6CF7' : '#fff'} />
                 <stop
                   offset="1"
-                  stopColor={theme === "light" ? "#4A6CF7" : "#fff"}
+                  stopColor={theme === 'light' ? '#4A6CF7' : '#fff'}
                   stopOpacity="0"
                 />
               </linearGradient>
@@ -241,13 +212,10 @@ const NewsLatterBox = () => {
                 y2="221.617"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop
-                  offset="0.328125"
-                  stopColor={theme === "light" ? "#4A6CF7" : "#fff"}
-                />
+                <stop offset="0.328125" stopColor={theme === 'light' ? '#4A6CF7' : '#fff'} />
                 <stop
                   offset="1"
-                  stopColor={theme === "light" ? "#4A6CF7" : "#fff"}
+                  stopColor={theme === 'light' ? '#4A6CF7' : '#fff'}
                   stopOpacity="0"
                 />
               </linearGradient>
@@ -259,13 +227,10 @@ const NewsLatterBox = () => {
                 y2="188.617"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop
-                  offset="0.328125"
-                  stopColor={theme === "light" ? "#4A6CF7" : "#fff"}
-                />
+                <stop offset="0.328125" stopColor={theme === 'light' ? '#4A6CF7' : '#fff'} />
                 <stop
                   offset="1"
-                  stopColor={theme === "light" ? "#4A6CF7" : "#fff"}
+                  stopColor={theme === 'light' ? '#4A6CF7' : '#fff'}
                   stopOpacity="0"
                 />
               </linearGradient>

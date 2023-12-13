@@ -9,6 +9,7 @@ import useLocaleNames from "@/app/_hooks/useLocaleNames";
 import { useTranslations } from "next-intl";
 import LanguageSwitcher from '../LanguageSwitcher'
 import { Locale } from "@/app/types";
+
 function Header ({ lang }: { lang: Locale }) {
   const menuData = getMenuData(lang);
   const localeNames = useLocaleNames();
@@ -34,7 +35,7 @@ function Header ({ lang }: { lang: Locale }) {
 
   // submenu handler
   const [openIndex, setOpenIndex] = useState(-1);
-  const handleSubmenu = (index) => {
+  const handleSubmenu = (index:number) => {
     if (openIndex === index) {
       setOpenIndex(-1);
     } else {
@@ -147,10 +148,10 @@ function Header ({ lang }: { lang: Locale }) {
                                 openIndex === index ? "block" : "hidden"
                               }`}
                             >
-                              {menuItem.submenu.map((submenuItem, j:number) => (
+                              {menuItem.submenu?.map((submenuItem) => (
                                 <Link
-                                  href={submenuItem.path}
-                                  key={j}
+                                  href={submenuItem.path!}
+                                  key={submenuItem.id}
                                   className="block rounded py-2.5 text-sm text-dark hover:text-primary dark:text-white/70 dark:hover:text-white lg:px-3"
                                 >
                                   {submenuItem.title}

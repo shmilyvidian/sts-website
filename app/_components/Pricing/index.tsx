@@ -1,10 +1,9 @@
-"use client";
-import SectionTitle from "../Common/SectionTitle";
-import OfferList from "./OfferList";
-import PricingBox from "./PricingBox";
+'use client';
+import SectionTitle from '../Common/SectionTitle';
+import OfferList from './OfferList';
+import PricingBox from './PricingBox';
 
 const Pricing = () => {
-
   return (
     <section id="pricing" className="relative z-10 py-16 md:py-20 lg:py-28">
       <div className="container">
@@ -16,11 +15,10 @@ const Pricing = () => {
         />
 
         <div className="grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2 lg:grid-cols-2">
-        
           <PricingBox
             packageName="Basic"
-            price={"1299"}
-            duration={"终生服务"}
+            price={'1299'}
+            duration={'终生服务'}
             subtitle="react+ts全栈课程，持续更新课程，辅导求职职业规范等服务"
           >
             <OfferList text="React技术栈前端课程" status="active" />
@@ -36,8 +34,8 @@ const Pricing = () => {
           </PricingBox>
           <PricingBox
             packageName="Plus"
-            price={"1899"}
-            duration={"终生服务"}
+            price={'1899'}
+            duration={'终生服务'}
             subtitle="基础计划的上的获得远程工作机会和技巧，加入工作室获取项目开发工作机会。"
           >
             <OfferList text="React技术栈前端课程" status="active" />

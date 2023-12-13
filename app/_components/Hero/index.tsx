@@ -3,20 +3,17 @@ const Hero = () => {
     <>
       <section
         id="home"
-        className="dark:bg-gray-dark relative z-10 overflow-hidden bg-white pb-16 pt-[120px] md:pb-[120px] md:pt-[150px] xl:pb-[160px] xl:pt-[180px] 2xl:pb-[200px] 2xl:pt-[210px]"
+        className="dark:bg-gray-dark relative z-10 overflow-hidden bg-white pt-[120px] md:pb-[120px] md:pt-[150px] xl:pb-[160px] xl:pt-[180px] 2xl:pb-[200px] 2xl:pt-[210px]"
       >
         <div className="container">
           <div className="-mx-4 flex flex-wrap">
             <div className="w-full px-4">
-              <div
-                className="wow fadeInUp mx-auto max-w-[800px] text-center"
-                data-wow-delay=".2s"
-              >
+              <div className="wow fadeInUp mx-auto max-w-[800px] text-center" data-wow-delay=".2s">
                 <h1 className="mb-5 text-3xl font-bold leading-tight text-black dark:text-white sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight">
                   助力每一位想成为数字游民的你
                 </h1>
                 <p className="dark:text-body-color-dark mb-12 text-base !leading-relaxed text-body-color sm:text-lg md:text-xl">
-                STSup专注于打造以React和TypeScript为技术栈的知识体系，培养学员成为数字游民目标，让你在具备远程工作和海外项目接单的能力的同时享受诗和远方。
+                  STSup专注于打造以React和TypeScript为技术栈的知识体系，培养学员成为数字游民目标，让你在具备远程工作的同时享受诗和远方。
                 </p>
               </div>
             </div>
@@ -30,24 +27,9 @@ const Hero = () => {
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <circle
-              cx="277"
-              cy="63"
-              r="225"
-              fill="url(#paint0_linear_25:217)"
-            />
-            <circle
-              cx="17.9997"
-              cy="182"
-              r="18"
-              fill="url(#paint1_radial_25:217)"
-            />
-            <circle
-              cx="76.9997"
-              cy="288"
-              r="34"
-              fill="url(#paint2_radial_25:217)"
-            />
+            <circle cx="277" cy="63" r="225" fill="url(#paint0_linear_25:217)" />
+            <circle cx="17.9997" cy="182" r="18" fill="url(#paint1_radial_25:217)" />
+            <circle cx="76.9997" cy="288" r="34" fill="url(#paint2_radial_25:217)" />
             <circle
               cx="325.486"
               cy="302.87"

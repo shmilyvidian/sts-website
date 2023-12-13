@@ -8,5 +8,6 @@ export default function useLocaleNames(): Record<Locale, string> {
   return locales.reduce((acc, locale) => {
     acc[locale] = t(locale) as string;
     return acc;
+    // eslint-disable-next-line @typescript-eslint/consistent-type-assertions
   }, {} as Record<Locale, string>);
 }

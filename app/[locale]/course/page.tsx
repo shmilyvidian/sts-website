@@ -1,6 +1,6 @@
-import AboutSectionOne from '@/app/_components/About/AboutSectionOne';
-import AboutSectionTwo from '@/app/_components/About/AboutSectionTwo';
+import Banner from '@/app/_components/Banner/Banner';
 import Breadcrumb from '@/app/_components/Common/Breadcrumb';
+import Courses from '@/app/_components/Courses/Courses';
 
 import { Metadata } from 'next';
 
@@ -10,17 +10,17 @@ export const metadata: Metadata = {
   // other metadata
 };
 
-const AboutPage = () => {
+const CoursePage = () => {
   return (
     <>
       <Breadcrumb
-        pageName="About Page"
+        pageName="Cousre Page"
         description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius eros eget sapien consectetur ultrices. Ut quis dapibus libero."
       />
-      <AboutSectionOne />
-      <AboutSectionTwo />
+      <Banner />
+      <Courses />
     </>
   );
 };
 
-export default AboutPage;
+export default CoursePage;

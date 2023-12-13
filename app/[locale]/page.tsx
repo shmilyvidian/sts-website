@@ -10,8 +10,8 @@ import Testimonials from '@/app/_components//Testimonials';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Free Next.js Template for Startup and SaaS',
-  description: 'This is Home for Startup Nextjs Template',
+  title: 'STSup',
+  description: 'STSup',
   // other metadata
 };
 

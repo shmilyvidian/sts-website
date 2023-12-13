@@ -23,29 +23,29 @@ export interface Article {
   translations: ArticleTranslations;
 }
 
-export type Feature = {
+export interface Feature {
   id: number;
   icon: JSX.Element;
   title: string;
   paragraph: string;
-};
+}
 
-export type Testimonial = {
+export interface Testimonial {
   id: number;
   name: string;
   designation: string;
   content: string;
   image: string;
   star: number;
-};
+}
 
-type Author = {
+interface Author {
   name: string;
   image: string;
   designation: string;
-};
+}
 
-export type Blog = {
+export interface Blog {
   id: number;
   title: string;
   paragraph: string;
@@ -53,4 +53,4 @@ export type Blog = {
   author: Author;
   tags: string[];
   publishDate: string;
-};
+}

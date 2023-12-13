@@ -29,7 +29,6 @@ export default async function RootLayout({
   try {
     messages = (await import(`../_translations/${locale}.json`)).default;
   } catch (error) {
-    console.error('Failed to load messages:', error);
     notFound();
   }
   return (

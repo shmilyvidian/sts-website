@@ -1,10 +1,10 @@
-import Link from "next/link";
+import Link from 'next/link';
 
-import { Metadata } from "next";
+import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "Sign In Page | Free Next.js Template for Startup and SaaS",
-  description: "This is Sign In Page for Startup Nextjs Template",
+  title: 'Sign In Page | Free Next.js Template for Startup and SaaS',
+  description: 'This is Sign In Page for Startup Nextjs Template',
   // other metadata
 };
 
@@ -82,10 +82,7 @@ const SigninPage = () => {
                 </div>
                 <form>
                   <div className="mb-8">
-                    <label
-                      htmlFor="email"
-                      className="mb-3 block text-sm text-dark dark:text-white"
-                    >
+                    <label htmlFor="email" className="mb-3 block text-sm text-dark dark:text-white">
                       Your Email
                     </label>
                     <input
@@ -116,11 +113,7 @@ const SigninPage = () => {
                         className="flex cursor-pointer select-none items-center text-sm font-medium text-body-color"
                       >
                         <div className="relative">
-                          <input
-                            type="checkbox"
-                            id="checkboxLabel"
-                            className="sr-only"
-                          />
+                          <input type="checkbox" id="checkboxLabel" className="sr-only" />
                           <div className="box mr-4 flex h-5 w-5 items-center justify-center rounded border border-body-color border-opacity-20 dark:border-white dark:border-opacity-10">
                             <span className="opacity-0">
                               <svg
@@ -144,10 +137,7 @@ const SigninPage = () => {
                       </label>
                     </div>
                     <div>
-                      <a
-                        href="#0"
-                        className="text-sm font-medium text-primary hover:underline"
-                      >
+                      <a href="#0" className="text-sm font-medium text-primary hover:underline">
                         Forgot Password?
                       </a>
                     </div>
@@ -159,7 +149,7 @@ const SigninPage = () => {
                   </div>
                 </form>
                 <p className="text-center text-base font-medium text-body-color">
-                  Don’t you have an account?{" "}
+                  Don’t you have an account?{' '}
                   <Link href="/signup" className="text-primary hover:underline">
                     Sign up
                   </Link>
@@ -178,7 +168,7 @@ const SigninPage = () => {
           >
             <mask
               id="mask0_95:1005"
-              style={{ maskType: "alpha" }}
+              style={{ maskType: 'alpha' }}
               maskUnits="userSpaceOnUse"
               x="0"
               y="0"

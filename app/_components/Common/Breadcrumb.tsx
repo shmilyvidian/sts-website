@@ -1,12 +1,6 @@
-import Link from "next/link";
+import Link from 'next/link';
 
-const Breadcrumb = ({
-  pageName,
-  description,
-}: {
-  pageName: string;
-  description: string;
-}) => {
+const Breadcrumb = ({ pageName, description }: { pageName: string; description: string }) => {
   return (
     <>
       <section className="relative z-10 overflow-hidden pt-28 lg:pt-[150px]">
@@ -32,11 +26,9 @@ const Breadcrumb = ({
                     >
                       Home
                     </Link>
-                    <span className="mr-3 block h-2 w-2 rotate-45 border-r-2 border-t-2 border-body-color"></span>
+                    <span className="mr-3 block h-2 w-2 rotate-45 border-r-2 border-t-2 border-body-color" />
                   </li>
-                  <li className="text-base font-medium text-primary">
-                    {pageName}
-                  </li>
+                  <li className="text-base font-medium text-primary">{pageName}</li>
                 </ul>
               </div>
             </div>
